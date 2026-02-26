@@ -1,23 +1,13 @@
-# Embedded C++ Synthesizer Project
+# OpenKali
 
-## Build Instructions
+Open source firmware for the Kali hardware synthesizer by [Proswell](https://patreon.com/proswell).
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/joemisra/openkali-public.git
-   cd openkali-public
-   ```
-2. Install the required dependencies:
-   ```bash
-   sudo apt-get install <dependencies>
-   ```
-3. Build the project:
-   ```bash
-   make
-   ```
+This is a solo project -- I'm one engineer doing everything from hardware design to DSP to firmware. If you find bugs, rough edges, or questionable decisions in here... have mercy.
 
-## Support Us
-If you enjoy our project and wish to support its development, consider joining us on Patreon: [Patreon](https://patreon.com/proswell)
+## Support
+
+If you'd like to support continued development, consider joining on Patreon: [patreon.com/proswell](https://patreon.com/proswell)
 
 ## License
-This project is licensed under the [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
+
+This project is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).

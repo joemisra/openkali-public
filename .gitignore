@@ -1,0 +1,5 @@
+.vscode/settings.json
+build
+build/*
+archives/dspc_txn_label.pdf
+*DS_*
