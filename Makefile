@@ -1,5 +1,18 @@
-# Makefile
+TARGET = Kali
 
-# This is a Makefile for the OpenKali project.
+LIBDIRS = lib/libDaisy lib/DaisySP
 
-# Add your build instructions here.
+CC = gcc
+CFLAGS = -I$(LIBDIRS)
+LDFLAGS = 
+
+SOURCES = main.c
+OBJECTS = $(SOURCES:.c=.o)
+
+all: $(TARGET)
+
+$(TARGET): $(OBJECTS)
+	$(CC) $(LDFLAGS) -o $@ $^
+
+clean:
+	rm -f $(OBJECTS) $(TARGET)
