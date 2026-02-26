@@ -1,6 +1,6 @@
 # OpenKali
 
-Open source firmware for the Kali hardware synthesizer by [Proswell](https://patreon.com/proswell).
+(STILL COPYING OVER, MISSING FILES) Open source firmware for the Kali hardware synthesizer by [Proswell](https://patreon.com/proswell).
 
 This is a solo project -- I'm one engineer doing everything from hardware design to DSP to firmware. If you find bugs, rough edges, or questionable decisions in here... have mercy.
 
