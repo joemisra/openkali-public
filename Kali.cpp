@@ -558,7 +558,8 @@ void AudioCallback(AudioHandle::InputBuffer in,
         // li::banktype::] dspoptionspages::distortionamount, 0, inp->knobs[9].value(), kali::banktype::dsp);
         // KaliOption *o = OptionRules[Kali::BankType::DSP][kali.editstate.SelectedOptionIndex];
         // kali.SetOptionValue(kali.editstate.SelectedOptionIndex, inp->Knobs[9].Value() * o->Max, Kali::BankType::DSP);
-        kali.SetOptionValue(DSPOptionsPages::DistortionAmount, inp->Knobs[9].Value(), BankType::DSP);
+        KaliOption *o = OptionRules[BankType::DSP][DSPOptionsPages::DistortionAmount];
+        kali.SetOptionValue(DSPOptionsPages::DistortionAmount, inp->Knobs[9].Value() * o->Max, BankType::DSP);
     }
 
     if (ENABLE_FIR_FILTER)

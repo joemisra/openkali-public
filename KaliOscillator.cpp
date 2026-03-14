@@ -389,8 +389,8 @@ float KaliOscillator::Process(KaliOscillator *myfriends)
         }
     }
 
-    // Apply final scaling
-    last = DSY_CLAMP(((last + offset) * (attenuate * 0.01f)), 0, 4095);
+    // Apply final scaling - attenuate around midpoint (2048) so polarity is preserved
+    last = DSY_CLAMP(((last - 2048.f) * (attenuate * 0.01f) + 2048.f + offset), 0, 4095);
 
     // Store value for visualization with anti-aliasing decimation
     if (last32possteppedmax <= 0)
